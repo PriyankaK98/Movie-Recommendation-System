@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendations</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/auto.css') }}">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+
+</head>
+
+
+<body style="background-image:url('static/img/Film.jpg'); background-repeat: no-repeat; background-size: 100% 100%; ">
+
+<!-- Sidebar -->
+<div class="sidenav">
+  <h3 style="color:#8e8e8e;">Explore Your Interest</h3>
+  <hr>
+  <a href="{{ url_for('home') }}" >Home</a>
+  <a href="{{ url_for('MNames') }}" >Based on Movie Names</a>
+  <a href="{{ url_for('Category') }}" >Based on Genre of Movie</a>
+
+
+</div>
+
+<!-- Page Content -->
+<div class="main" >
+<!--<div class="w3-container">-->
+<!--<h2>Sidebar Navigation Example</h2>-->
+<!--<p>The sidebar with is set with "style="width:25%".</p>-->
+<!--<p>The left margin of the page content is set to the same value.</p>-->
+<!--</div>-->
+
+<h1>MoView Engine</h1>
+<marquee><b>Note: </b> This Website only Recommends Hollywood Movies !!! </marquee>
+
+
+</div>
+
+
+</body>
+</html>
