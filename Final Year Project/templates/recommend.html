@@ -8,31 +8,22 @@
 </head>
 
 <body>
-
-
-
-
-
     <div class="sidenav">
-  <h3 style="color:#8e8e8e;">Explore Your Interest</h3>
-  <hr>
+        <h3 style="color:#8e8e8e;">Explore Your Interest</h3>
+        <hr>
         <a href="{{ url_for('home') }}" >Home</a>
-  <a href="{{ url_for('MNames') }}" >Based on Movie Names</a>
-  <a href="{{ url_for('Category') }}" >Based on Genre of Movie</a>
-
-</div>
+        <a href="{{ url_for('MNames') }}" >Based on Movie Names</a>
+        <a href="{{ url_for('Category') }}" >Based on Genre of Movie</a>
+    </div>
 
     <div class="main">
         <h1>MoView Engine</h1>
-    <h3 style="text-align: center; color: white; margin-top:10px;">Recommended Movies are: </h3>
-    {% for list_elements in prediction_text %}
-    <a style="text-decoration:none; color:#fff" href="/Details/{{ list_elements }}">{{ list_elements }}</a>
+        <h3 style="text-align: center; color: white; margin-top:10px;">Recommended Movies are: </h3>
+        {% for list_elements in prediction_text %}
+        <a style="text-decoration:none; color:#fff" href="/Details/{{ list_elements }}">{{ list_elements }}</a>
         <br>
         <br>
-    {% endfor %}
-
+        {% endfor %} 
     </div>
-
-
 </body>
 </html>
